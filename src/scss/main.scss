@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
+@import "modules/hero.scss";
+
 html {
   box-sizing: border-box;
-  background: $blue;
+  font-size: 16px;
 }
 
 *, *:before, *:after {

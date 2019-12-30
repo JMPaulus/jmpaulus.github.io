@@ -1,0 +1,32 @@
+.hero{
+    max-width: 10184px;
+    padding: 112px 50px 200px;
+    margin: 0 auto;
+    
+    &__description{
+      color:$gray;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+      max-width: 780px;
+
+   }
+
+    &__image{
+       width: 120px;
+       height: 180px;
+    }
+    &__link{
+      color: $blueish;
+    }
+    &__title{
+       font-style: Poppins;
+       font-style: normal;
+       font-size: 2.5rem;
+       font-weight: 600;
+       line-height: 3.5rem; 
+       max-width: 780px;
+       margin: 2rem 0 1rem;
+    }
+}
