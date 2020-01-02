@@ -10,6 +10,7 @@
       font-size: 1.25rem;
       line-height: 2.25rem;
       max-width: 780px;
+      margin-bottom: 2rem;
 
    }
 
@@ -19,6 +20,16 @@
     }
     &__link{
       color: $blueish;
+      font-weight: 500;
+    }
+    &__mail{
+       color:$blueish;
+       font-weight: 500;
+       font-size: 1.5rem;
+       text-decoration: none;
+       padding-bottom: 8px;
+       border-bottom: 2px solid $blueish;
+
     }
     &__title{
        font-style: Poppins;
