@@ -7,15 +7,19 @@
         font-style: normal;
         font-weight: 600;
         padding: 1rem 0;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
     }
 
 }
 
-.skills--list{
-    display: flex;
+.skills-list{
+    display: grid;
     padding: 8rem 0;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr ;
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     &__title{
         font-weight: 600;
         font-size: 32px;
@@ -28,7 +32,7 @@
             display: block;
             background: $green;
             border-radius: 8px;
-
+            margin-bottom: 1.45rem;
         }
     }
 }
