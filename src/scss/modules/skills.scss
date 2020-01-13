@@ -14,18 +14,23 @@
 
 .skills-list{
     display: grid;
-    padding: 8rem 0;
+    padding: 8rem 0 0;
     grid-template-columns: 1fr 1fr ;
     &__item{
         color: $gray;
+        padding: 12px 0 0px;
+        min-height: 40px;
         ::before{
             content: '' ;
+            position: absolute;
+            top:10px;
+            left: 0;
             display: block;
             width: 18px;
             height: 18px;
-            background: url('../assets/img/check.svg');
+            background: url('src/assets/img/check-black.svg');
         }
-    }
+    } 
     &__list{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -48,6 +53,12 @@
             background: $green;
             border-radius: 8px;
             margin-bottom: 1.5rem;
+            .skills-list--violet & {
+                background:$violet;
+            }
+            .skills-list--blue & {
+                background: $blueish;
+            }
         }
     }
 }
