@@ -38,10 +38,22 @@
     &__containter{
         padding: 3rem;
     }
+
+    &__description{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 2rem;
+    }
+
+    &__footer{
+        color:$light-gray;
+    }
     &__title{
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
-        line-height: 36px;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin: 0;
     }
 }
