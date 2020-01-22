@@ -34,7 +34,7 @@
     box-shadow: 0px 6px 16px rgba(24,41,67,0.89);
     padding: 1rem;
     overflow: hidden;
-    &__containter{
+    &__container{
         padding: 3rem;
     }
 
@@ -46,8 +46,10 @@
     }
 
     &__footer{
-        color:$light-gray;
-        padding: 1rem;
+        background:$light-gray;
+        padding: 1rem 3rem;
+        text-align: right;
+        border: none;
 
     }
     &__title{
