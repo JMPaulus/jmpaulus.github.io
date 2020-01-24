@@ -1,0 +1,55 @@
+.contact{
+    background: $dark-blue; 
+    color:#fff;
+    padding-bottom: calc(8rem-16px);
+    &__description{
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color:$gray;
+    max-width: 580px;
+    margin: 0 0 .5em;
+ }
+    &__mail{
+       color:white;
+       font-weight: 500;
+       font-size: 1.5rem;
+       text-decoration: none;
+       padding-bottom: 8px;
+       border-bottom: 2px solid $blueish;
+       display: inline-block;
+       margin: 2rem 0 0;
+       margin-bottom: 2rem;
+    }
+    &__title{
+        font-size: 2.25rem;
+        margin: 0 auto 1rem;
+        font-style: normal;
+        font-weight: 600;
+        padding: 2rem 0 0;
+        max-width: 1184px;
+         &::before {
+            content: '';
+            border-radius: 88px;
+            height: 4px;
+            display: block;
+            background: $blue;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.social{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    padding: 2rem;
+    &__item{
+    text-decoration: none;
+     & + & {
+         margin-left: 1.5rem ;
+     }   
+    }
+}
