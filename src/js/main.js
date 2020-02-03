@@ -12,18 +12,18 @@ fetch('https://api.github.com/users/JMPaulus/repos?sort=updated&direction=desc')
     const repos = resp;
     for (const repo of repos) {
       const { description, homepage, html_url, name } = repo;
+      console.log(repo);
       list.innerHTML += `
-       <li class="project">
-              <div class="project__container">
-              <img class="project__logo" src="assets/img/GitHub middle.png" alt="glasses counter">
-              <h3 class="project__title">${name}</h3>
-              <p  class="project__description">${description}</p>
-              </div>
-              <div class="project__footer">
-                <a class="project__link project__link--demo" href="https://jmpaulus.github.io/hydrapp/" title="demo: ${name}">Demo</a>
-                <a class="project__link project__link--code" href="${html_url}" rel="nofollow noreferrer" target="_blank" title="code: ${name}">Github</a>
-                </div>
-              </li>
+        <li class="project">
+          <div class="project__container">
+          <img class="project__logo" src="assets/img/GitHub middle.png" alt="glasses counter">
+          <h3 class="project__title">${name}</h3>
+          <p  class="project__description">${description}</p>
+          </div>
+          <div class="project__footer">
+          <a class="project__link project__link--demo" href="${html_url} "target="_blank" rel="nofollow noreferrer"title="demo: ${name}">Demo</a>
+          <a class="project__link project__link--code" href="${html_url}"target="_blank" rel="nofollow noreferrer" title="code: ${name}">Github</a> </div>
+          </li>
      `;
     }
   })
