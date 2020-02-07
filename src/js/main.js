@@ -18,10 +18,15 @@ fetch('https://api.github.com/users/JMPaulus/repos?sort=updated&direction=desc')
           <div class="project__container">
           <img class="project__logo" src="assets/img/GitHub middle.png" alt="glasses counter">
           <h3 class="project__title">${name}</h3>
-          <p  class="project__description">${description}</p>
+          ${
+            description ? `<p class="project__description">${description}</p>`: 'No description'
+           }
           </div>
           <div class="project__footer">
-          <a class="project__link project__link--demo" href="${html_url} "target="_blank" rel="nofollow noreferrer"title="demo: ${name}">Demo</a>
+          ${
+        homepage ? `<a class="project__link project__link--demo" href="${homepage}" "target="_blank" rel="nofollow noreferrer" title="demo: ${name}">Demo</a>` : ''
+          }
+          
           <a class="project__link project__link--code" href="${html_url}"target="_blank" rel="nofollow noreferrer" title="code: ${name}">Github</a> </div>
           </li>
      `;
