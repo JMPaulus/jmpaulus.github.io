@@ -6,7 +6,7 @@ console.log(`Dear recruiter, I know this is not a killer code, but I am the pers
 
 const list = document.querySelector('.projects-list--js');
 
-fetch('https://api.github.com/users/JMPaulus/repos?sort=updated&direction=desc')
+fetch('https://api.github.com/users/JMPaulus/repos?sort=updated&direction=desc&since=2019-10-01')
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;
